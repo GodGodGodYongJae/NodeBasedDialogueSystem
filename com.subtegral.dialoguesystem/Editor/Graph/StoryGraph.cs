@@ -80,7 +80,7 @@ namespace Subtegral.DialogueSystem.Editor
         {
             var miniMap = new MiniMap {anchored = true};
             var cords = _graphView.contentViewContainer.WorldToLocal(new Vector2(this.maxSize.x - 10, 30));
-            miniMap.SetPosition(new Rect(cords.x, cords.y, 200, 140));
+            miniMap.SetPosition(new Rect(cords.x, cords.y, 350, 140));
             _graphView.Add(miniMap);
         }
 

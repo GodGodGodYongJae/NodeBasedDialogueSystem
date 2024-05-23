@@ -175,6 +175,7 @@ namespace Subtegral.DialogueSystem.Editor
                 name = string.Empty,
                 value = outputPortName
             };
+            textField.style.flexDirection = FlexDirection.Column;
             textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
             generatedPort.contentContainer.Add(new Label("  "));
             generatedPort.contentContainer.Add(textField);
